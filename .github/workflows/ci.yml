@@ -1,20 +1,10 @@
+
 ---
 name: CI
 
 on:
-  push:
-    paths-ignore:
-      - '.github/ISSUE_TEMPLATE/**'
-      - '.github/PULL_REQUEST_TEMPLATE.md'
-      - 'contrib/**'
-      - 'netbox/translations/**'
-  pull_request:
-    paths-ignore:
-      - '.github/ISSUE_TEMPLATE/**'
-      - '.github/PULL_REQUEST_TEMPLATE.md'
-      - 'contrib/**'
-      - 'netbox/translations/**'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: read
 
